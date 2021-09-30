@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #363636;
+}
+
+body{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#container{
+    display: flex;
+    flex-direction:column;
+    margin: 2em;
+    width: 700px;
+    box-shadow: 0 0 15px 2px rgb(10 10 10 / 10%);
+    border-radius: 8px;
+}
+
+
+figure img {
+    width: 100%;
+    max-height: 350px;
+    border-radius: 8px 8px 0 0;
+}
+figcaption{
+    padding: 0.7em 1.2em;
+    margin-top: -5px;
+    box-shadow:0 0 10px 1px rgb(10 10 10 / 10%);
+    font-weight: 700;
+}
+.details h1{
+    display: block;
+    font-weight: 600;
+    font-size: 3em;
+    margin-top: 0.3em;
+}
+.details p{
+    font-size: 1.3em;
+}
+.details h2{
+    margin: 1em 0;
+    display: inline-block;
+}
+.details select{
+    font-size: 1em;
+    border: 1.5px solid rgb(10 10 10 / 10%);
+    padding: 0.4em 0.8em;
+    cursor: pointer;
+    border-radius: 1em;
+}
+.main{
+    margin-left: 1.5em ;
+}
+section#buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+
+}
+.btn{
+    font-size: 1.3em;
+    padding: 0.8em 1.2em;
+    margin: 0 0.2em;
+    border: none;
+    border-radius: 0.2em;
+    color: white;
+    transition: background-color 0.2s ease;
+    flex-grow: 1;
+    position: relative;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn:nth-of-type(1){
+    background-color: #00d1b2;
+}
+.btn:nth-of-type(1):hover{
+    background-color: #00c4a7;
+}
+.btn:nth-of-type(2){
+    background-color: #2793da;
+}
+.btn:nth-of-type(2):hover{
+    background-color: #007bce;
+}
+.btn:nth-of-type(3){
+    background-color: #f14668;
+}
+.btn:nth-of-type(3):hover{
+    background-color: #f03a5f;
+}
+.btn:disabled::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0.2em;
+    background-color: grey;
+    opacity: 0.5;
+    cursor:not-allowed;
+}
+.win{
+    color:#48c774;
+}
+.lose{
+    color: #f14668;
+}
+/* @media (min-width: 786px){
+    
+    
+} */
+
